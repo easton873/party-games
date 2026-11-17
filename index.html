@@ -73,7 +73,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 48px;
       text-align: center;
       box-shadow: 0 10px 0 rgba(0,0,0,.25), 0 18px 30px rgba(0,0,0,.4);
       transition: transform .2s ease, box-shadow .2s ease;
@@ -106,7 +107,6 @@
     .corner.tl { top: 22px; left: 24px; }
     .corner.br { bottom: 22px; right: 24px; transform: rotate(180deg); }
 
-    .icon { font-size: 5rem; margin-top: 28px; filter: drop-shadow(0 4px 0 rgba(0,0,0,.12)); }
     .game h2 {
       font-family: "Patua One", serif;
       font-size: 2rem;
@@ -125,17 +125,11 @@
       box-shadow: 0 4px 0 rgba(0,0,0,.25);
     }
 
-    /* scattered game pieces for atmosphere */
-    .deco { position: fixed; font-size: 2.4rem; opacity: .35; pointer-events: none; user-select: none; }
-    .d1 { top: 12%; left: 5%;  transform: rotate(-15deg); }
-    .d2 { top: 20%; right: 6%; transform: rotate(20deg); }
-    .d3 { bottom: 10%; left: 7%; transform: rotate(12deg); }
-    .d4 { bottom: 14%; right: 5%; transform: rotate(-25deg); }
 
     @media (max-width: 480px) {
       body { border-width: 10px; padding-top: 28px; }
       .games { gap: 32px; }
-      .deco { display: none; }
+
     }
     @media (prefers-reduced-motion: reduce) {
       .game { transition: none; }
@@ -143,10 +137,6 @@
   </style>
 </head>
 <body>
-  <span class="deco d1" aria-hidden="true">🎲</span>
-  <span class="deco d2" aria-hidden="true">♠️</span>
-  <span class="deco d3" aria-hidden="true">♟️</span>
-  <span class="deco d4" aria-hidden="true">🎯</span>
 
   <header>
     <h1>Game Night</h1>
@@ -155,14 +145,12 @@
   <main class="games">
     <a class="game eric" href="https://multiplayer-eric.onrender.com/">
       <span class="corner tl">♥</span>
-      <span class="icon" aria-hidden="true">🧑‍🤝‍🧑</span>
       <h2>Multiplayer Eric</h2>
       <span class="play">Play</span>
       <span class="corner br">♥</span>
     </a>
     <a class="game matchy" href="https://matchy-finderoo.onrender.com/">
       <span class="corner tl">♣</span>
-      <span class="icon" aria-hidden="true">🃏</span>
       <h2>Matchy Finderoo</h2>
       <span class="play">Play</span>
       <span class="corner br">♣</span>
