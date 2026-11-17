@@ -57,7 +57,7 @@
       justify-content: center;
       gap: 40px;
       width: 100%;
-      max-width: 800px;
+      max-width: 1100px;
     }
 
     /* Each game is a card dealt onto the table */
@@ -96,6 +96,10 @@
     }
     .game.eric  { --card-color: var(--red); }
     .game.matchy { --card-color: var(--blue); }
+    .game.name { --card-color: #c98a0a; }
+    .game.soon { cursor: default; }
+    .game.soon .play { opacity: .6; }
+    .game.soon:hover { transform: rotate(-3deg); box-shadow: 0 10px 0 rgba(0,0,0,.25), 0 18px 30px rgba(0,0,0,.4); }
 
     .corner {
       position: absolute;
@@ -155,6 +159,12 @@
       <span class="play">Play</span>
       <span class="corner br">♣</span>
     </a>
+    <div class="game name soon">
+      <span class="corner tl">♦</span>
+      <h2>The Name Game</h2>
+      <span class="play">Coming soon</span>
+      <span class="corner br">♦</span>
+    </div>
   </main>
 </body>
 </html>
