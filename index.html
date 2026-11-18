@@ -97,9 +97,13 @@
     .game.eric  { --card-color: var(--red); }
     .game.matchy { --card-color: var(--blue); }
     .game.name { --card-color: #c98a0a; }
+    .game.clicker { --card-color: #5b3fa8; }
+    .game.categorizers { --card-color: #1f8a7a; }
     .game.soon { cursor: default; }
     .game.soon .play { opacity: .6; }
-    .game.soon:hover { transform: rotate(-3deg); box-shadow: 0 10px 0 rgba(0,0,0,.25), 0 18px 30px rgba(0,0,0,.4); }
+    .game.soon:hover { box-shadow: 0 10px 0 rgba(0,0,0,.25), 0 18px 30px rgba(0,0,0,.4); }
+    .game.soon:nth-child(odd):hover  { transform: rotate(-3deg); }
+    .game.soon:nth-child(even):hover { transform: rotate(2.5deg); }
 
     .corner {
       position: absolute;
@@ -165,6 +169,18 @@
       <span class="play">Play</span>
       <span class="corner br">♦</span>
     </a>
+    <div class="game clicker soon">
+      <span class="corner tl">♠</span>
+      <h2>Team Button Clicker</h2>
+      <span class="play">Coming soon</span>
+      <span class="corner br">♠</span>
+    </div>
+    <div class="game categorizers soon">
+      <span class="corner tl">★</span>
+      <h2>Creative Categorizers</h2>
+      <span class="play">Coming soon</span>
+      <span class="corner br">★</span>
+    </div>
   </main>
 </body>
 </html>
